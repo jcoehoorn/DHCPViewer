@@ -15,3 +15,5 @@ most, and to provide the sorting the visual display features I'm looking for.
 * .Net 4.5
 * Remote Server Administration Tools
 * Windows 8 or newer (Windows 10 recommended)
+
+Built with Visual Studio 2015 Community
