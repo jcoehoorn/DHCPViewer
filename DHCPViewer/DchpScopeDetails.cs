@@ -128,6 +128,4 @@ namespace DHCPViewer
             return sb.ToString();
         }
     }
-
-
 }
