@@ -9,3 +9,8 @@ MAC address. The cli tools just didn't appeal to me.
 
 But I am a programmer or what? So I wrote my own Windows Forms tool to wrap around the Powershell commandlets I need
 most, and to provide the sorting the visual display features I'm looking for.
+
+##Requies:
+
+* .Net 4.5
+* Remote Server Administration Tools
