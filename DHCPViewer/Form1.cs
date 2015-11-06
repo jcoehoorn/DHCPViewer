@@ -6,7 +6,8 @@ namespace DHCPViewer
 {
     public partial class Form1 : Form
     {
-        private PowerShellDhcpData data = new PowerShellDhcpData();
+        //this is set from Program.cs
+        public PowerShellDhcpData data;
 
         public Form1()
         {
@@ -35,14 +36,19 @@ namespace DHCPViewer
         }
 
         private bool SanitizeServerText(string text)
-        {
-            //TODO:...
-            Server = text;
+        {         
             bool result = true;
+
+            //TODO:...
+            // Not 100% sure this is necessary any more.
+            // The powershell pipeline uses a parameter mechanism that is at least superficially similar to sql parameters
+            //    so this may already be quarantined.
+
             if (!result) // if sanitize is bad
             {
                 lblError.Text = "Invalid server text";
             }
+            Server = text;
             return result;
         }
 
@@ -256,7 +262,7 @@ namespace DHCPViewer
 
         private void txtServer_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == '\r')
+            if (e.KeyChar == '\r' &&  SanitizeServerText(txtServer.Text))
             {
                 ChangeServer();
             }
