@@ -1,6 +1,6 @@
 # DHCPViewer
 
-The Windows 10 release of Remote Server Administration Tools left out the DHCP snap-in, 
+The initial Windows 10 release of Remote Server Administration Tools left out the DHCP snap-in, 
 leaving PowerShell or RDP as the only mechanism to get information from your Windows DHCP server remotely.
 
 I don't mind using these tools to make the changes (changes are rare), but my day to day work sometimes requires 
