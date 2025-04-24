@@ -17,3 +17,6 @@ most, and to provide the sorting and visual display features I'm looking for.
 * Windows 8 or newer (Windows 10 recommended)
 
 Built with Visual Studio 2015 Community
+
+### Note
+The Windows RSAT packages now include DHCP again, so this is no longer necessary.
